@@ -1,7 +1,7 @@
 import random
 #Ha de mostrar una resposta aleatori i que l'usuari ha de respondre la pregunta
 #llista de preguntes amb la seva resposta
-llista_preguntes=[("Quina es la capital de espana","Madrid"),("Quina es la capital de italia", "Roma")]
+llista_preguntes=[("Quina es la capital de espana","madrid"),("Quina es la capital de italia", "roma")]
 
 #numero aleatori
 seed= random.randint(0,100)
@@ -17,5 +17,8 @@ resposta="si"
 puntuació=0
 while resposta == "si":
     print(pregunta)
+    resposta_usuari=input("Resposta: ")
+    resposta_usuari=resposta_usuari.strip()
+    resposta_usuari=resposta_usuari.lower()
 
 #Mostra la puntuació de l'usuari d'acord de com ha respost la pregunta
