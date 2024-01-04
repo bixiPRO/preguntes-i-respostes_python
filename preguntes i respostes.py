@@ -12,9 +12,12 @@ numero_pregunta = int(random * (len(llista_preguntes)))
 #mostrar pregunta
 pregunta_elegir=llista_preguntes[numero_pregunta%len(llista_preguntes)]
 pregunta=pregunta_elegir[0]
+resposta=pregunta_elegir[1]
+print(resposta)
 #bucle
 resposta="si"
 puntuació=0
+
 while resposta == "si":
     print(pregunta)
     resposta_usuari=input("Resposta: ")
