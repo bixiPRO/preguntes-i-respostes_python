@@ -1,7 +1,7 @@
 #PRE://Ha de mostrar una resposta aleatori i que l'usuari ha de respondre la pregunta
 import random
 #llista de preguntes amb la seva resposta
-llista_preguntes=[("Quina es la capital de espana","Madrid"),("Quina es la capital de italia", "Roma")]
+llista_preguntes=[("Quina es la capital de Espana","Madrid"),("Quina es la capital de Italia", "Roma"),("Quina es la capital de Japó", "Toquio"), ("Quina es la capital de França", "Paris"), ("Quina es la capital de Russia", "Moscou") ]
 
 #bucle
 resposta_bucle="si"
@@ -23,6 +23,7 @@ while resposta_bucle == "si":
     resposta=resposta.strip()
     resposta=resposta.lower()
     print(pregunta)
+    print("No posis exentos en ninguna resposta, sinó declarara com a malament")
     resposta_usuari=input("Resposta: ")
     resposta_usuari=resposta_usuari.strip()
     resposta_usuari=resposta_usuari.lower()
