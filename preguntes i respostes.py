@@ -26,6 +26,7 @@ while resposta == "si":
     resposta_usuari=input("Resposta: ")
     resposta_usuari=resposta_usuari.strip()
     resposta_usuari=resposta_usuari.lower()
+    print(resposta_usuari)
     if resposta_usuari==resposta:
         puntuacio+=1
         print(puntuacio)
