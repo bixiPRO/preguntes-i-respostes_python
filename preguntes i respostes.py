@@ -1,5 +1,5 @@
 import random
-#Ha de mostrar una resposta aleatori i que l'usuari ha de respondre la pregunta
+#PRE://Ha de mostrar una resposta aleatori i que l'usuari ha de respondre la pregunta
 #llista de preguntes amb la seva resposta
 llista_preguntes=[("Quina es la capital de espana","Madrid"),("Quina es la capital de italia", "Roma")]
 
@@ -26,13 +26,12 @@ while resposta == "si":
     resposta_usuari=resposta_usuari.lower()
     if resposta_usuari==resposta:
         puntuacio+=1
-        usuari=input("Vols continuar jugant? (si/no)")
-        usuari=usuari.strip()
-        usuari=usuari.lower()
-        if usuari != "si":
-            resposta="no"
     else:
         print("Resposta incorrecte!")
-else:
-    print(puntuacio)
-#Mostra la puntuació de l'usuari d'acord de com ha respost la pregunta
+
+    usuari=input("Vols continuar jugant? (si/no)")
+    usuari=usuari.strip()
+    usuari=usuari.lower()
+    
+print(f"Puntuació final: {puntuacio}")
+#POST://Mostra la puntuació de l'usuari d'acord de com ha respost la pregunta
