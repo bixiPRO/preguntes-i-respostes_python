@@ -10,7 +10,7 @@ contador_vegadeswhile=0
 
 print("IMPORTANT:")
 print("- La resposta ha de ser en Català")
-print("- No posis exentos en ninguna resposta, sinó declarara com a malament")
+print("- No posis exentos en ninguna resposta, sinó declarara com a malament\n")
 
 while resposta_bucle == "si":
     contador_vegadeswhile+=1
