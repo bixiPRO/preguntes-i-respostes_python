@@ -8,6 +8,8 @@ resposta_bucle="si"
 puntuacio=0
 contador_vegadeswhile=0
 
+print("No posis exentos en ninguna resposta, sinó declarara com a malament")
+
 while resposta_bucle == "si":
     contador_vegadeswhile+=1
     #numero aleatori
@@ -23,7 +25,6 @@ while resposta_bucle == "si":
     resposta=resposta.strip()
     resposta=resposta.lower()
     print(pregunta)
-    print("No posis exentos en ninguna resposta, sinó declarara com a malament")
     resposta_usuari=input("Resposta: ")
     resposta_usuari=resposta_usuari.strip()
     resposta_usuari=resposta_usuari.lower()
@@ -33,9 +34,12 @@ while resposta_bucle == "si":
     else:
         print("Resposta incorrecte!")
     #preguntar l'usuari si vol continuar jugant
-    resposta_bucle=input("Vols continuar jugant? (si/no)")
+    resposta_bucle=input("Vols continuar jugant? (no) per finalitzar")
     resposta_bucle=resposta_bucle.strip()
     resposta_bucle=resposta_bucle.lower()
+
+    if resposta_bucle != "no":
+            resposta_bucle="si"
 
 print(f"Puntuació final: {puntuacio} / {contador_vegadeswhile}")
 #POST://Mostra la puntuació de l'usuari d'acord de com ha respost la pregunta
