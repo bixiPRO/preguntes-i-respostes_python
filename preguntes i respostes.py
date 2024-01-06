@@ -1,7 +1,7 @@
 #PRE://Ha de mostrar una resposta aleatori i que l'usuari ha de respondre la pregunta
 import random
 #llista de preguntes amb la seva resposta
-llista_preguntes=[("Quina es la capital de Espana","Madrid"),("Quina es la capital de Italia", "Roma"),("Quina es la capital de Japó", "Tokyo"), ("Quina es la capital de França", "Paris"), ("Quina es la capital de Russia", "Moscou"), ("Quina es la capital de Alemanya", "Berlin"), ("Quina es la capital de India", "Nova Delhi"), ("Quina es la capital de China", "Pekin"), ("Quina es la capital de Mèxic", "Ciutat de Mexic"), ("Quina es la capital de Austràlia", "Cambra") ]
+llista_preguntes=[("Quina es la capital de Espana","Madrid"),("Quina es la capital de Italia", "Roma"),("Quina es la capital de Japó", "Toquio"), ("Quina es la capital de França", "Paris"), ("Quina es la capital de Russia", "Moscou"), ("Quina es la capital de Alemanya", "Berlin"), ("Quina es la capital de India", "Nova Delhi"), ("Quina es la capital de China", "Pekin"), ("Quina es la capital de Mèxic", "Ciutat de Mexic"), ("Quina es la capital de Austràlia", "Cambra") ]
 
 #bucle
 resposta_bucle="si"
