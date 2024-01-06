@@ -1,7 +1,7 @@
 #PRE://Ha de mostrar una resposta aleatori i que l'usuari ha de respondre la pregunta
 import random
 #llista de preguntes amb la seva resposta
-llista_preguntes=[("Quina es la capital de Espana","Madrid"),("Quina es la capital de Italia", "Roma"),("Quina es la capital de Japó", "Toquio"), ("Quina es la capital de França", "Paris"), ("Quina es la capital de Russia", "Moscou") ]
+llista_preguntes=[("Quina es la capital de Espana","Madrid"),("Quina es la capital de Italia", "Roma"),("Quina es la capital de Japó", "Toquio"), ("Quina es la capital de França", "Paris"), ("Quina es la capital de Russia", "Moscou"), ("Quina es la capital de Alemanya", "Berlin"), ("Quina es la capital de India", "Nova Delhi"), ("Quina es la capital de China", "Pekin"), ("Quina es la capital de Mèxic", "Ciutat de Mexic"), ("Quina es la capital de Austràlia", "Cambra") ]
 
 #bucle
 resposta_bucle="si"
@@ -34,7 +34,7 @@ while resposta_bucle == "si":
     else:
         print("Resposta incorrecte!")
     #preguntar l'usuari si vol continuar jugant
-    resposta_bucle=input("Vols continuar jugant? (no) per finalitzar")
+    resposta_bucle=input("Vols continuar jugant? (si/no)")
     resposta_bucle=resposta_bucle.strip()
     resposta_bucle=resposta_bucle.lower()
 
