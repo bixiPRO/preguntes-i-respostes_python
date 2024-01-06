@@ -6,8 +6,10 @@ llista_preguntes=[("Quina es la capital de espana","Madrid"),("Quina es la capit
 #bucle
 resposta_bucle="si"
 puntuacio=0
+contador_vegadeswhile=0
 
 while resposta_bucle == "si":
+    contador_vegadeswhile+=1
     #numero aleatori
     seed = random.randint(0, 100)
     seed = (seed * 997) % 1000
@@ -34,5 +36,5 @@ while resposta_bucle == "si":
     resposta_bucle=resposta_bucle.strip()
     resposta_bucle=resposta_bucle.lower()
 
-print(f"Puntuació final: {puntuacio}")
+print(f"Puntuació final: {puntuacio} / {contador_vegadeswhile}")
 #POST://Mostra la puntuació de l'usuari d'acord de com ha respost la pregunta
