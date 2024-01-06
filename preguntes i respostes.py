@@ -26,12 +26,13 @@ while resposta == "si":
     resposta_usuari=resposta_usuari.lower()
     if resposta_usuari==resposta:
         puntuacio+=1
+        print("Resposta correcte! +1 punt")
     else:
         print("Resposta incorrecte!")
 
     usuari=input("Vols continuar jugant? (si/no)")
     usuari=usuari.strip()
     usuari=usuari.lower()
-    
+
 print(f"Puntuació final: {puntuacio}")
 #POST://Mostra la puntuació de l'usuari d'acord de com ha respost la pregunta
